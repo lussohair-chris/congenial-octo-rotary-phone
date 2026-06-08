@@ -14,6 +14,10 @@
             --card-bg: #FFFFFF;
         }
 
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
             background-color: var(--bg-color);
@@ -45,7 +49,17 @@
         /* 設計師核心介紹區區塊 */
         .profile-section {
             text-align: center;
-            padding: 80px 0 60px 0;
+            padding: 60px 0;
+        }
+        .designer-avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 25px;
+            border: 1px solid rgba(26, 26, 26, 0.08);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+            background-color: #EAE6E1;
         }
         .designer-title {
             font-size: 0.85rem;
@@ -104,7 +118,6 @@
             transform: translateY(-5px);
         }
         
-        /* 作品圖片樣式，會自動去抓妳上傳的 JPEG */
         .portfolio-image {
             width: 100%;
             aspect-ratio: 3 / 4; 
@@ -129,11 +142,73 @@
             font-weight: 400;
         }
 
+        /* 服務項目區塊：全新精緻菜單排版 */
+        .service-list {
+            max-width: 650px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        }
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #EAE6E1;
+        }
+        .service-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .service-name {
+            font-size: 0.95rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+        }
+        .service-price {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            white-space: nowrap;
+            margin-left: 20px;
+        }
+
+        /* 沙龍資訊區塊 */
+        .info-card {
+            max-width: 650px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            text-align: center;
+        }
+        .info-item {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+        .info-item strong {
+            display: block;
+            font-weight: 500;
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            letter-spacing: 0.15em;
+        }
+
         /* 高級感預約按鈕 */
         .cta-container {
             text-align: center;
-            margin-top: 100px; /* 稍微拉開與作品集的距離，看起來更大器 */
-            margin-bottom: 40px;
+            margin-top: 50px;
+            margin-bottom: 20px;
         }
         .btn-booking {
             display: inline-block;
@@ -169,6 +244,8 @@
     <div class="container">
         
         <section class="profile-section">
+            <img src="avatar.jpg" alt="CHRIS" class="designer-avatar">
+            
             <div class="designer-title">Senior Hair Stylist</div>
             <h1 class="designer-name">CHRIS</h1>
             <p class="designer-bio">
@@ -191,31 +268,6 @@
 
             <div class="portfolio-item">
                 <img src="work2.jpg" alt="染髮作品" class="portfolio-image">
-                <div class="portfolio-info">
-                    <span class="style-tag">Color / 染髮</span>
-                    <h3 class="style-name">冷調燕麥奶茶色</h3>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <img src="work3.jpg" alt="剪髮作品" class="portfolio-image">
-                <div class="portfolio-info">
-                    <span class="style-tag">Cut / 剪髮</span>
-                    <h3 class="style-name">輕盈感邊緣羽毛剪</h3>
-                </div>
-            </div>
-
-        </section>
-
-        <div class="cta-container">
-            <a href="https://instagram.com" class="btn-booking" target="_blank">Follow IG / 線上預約</a>
-        </div>
-
-    </div>
-
-    <footer>
-        &copy; 2026 HAIR STUDIO CHRIS. All Rights Reserved.
-    </footer>
 
 </body>
 </html>

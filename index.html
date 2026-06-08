@@ -142,8 +142,9 @@
             font-weight: 400;
         }
 
-        /* 服務項目區塊：全新精緻菜單排版 */
+        /* ✨ 服務項目區塊樣式（修復完成） */
         .service-list {
+            display: block; /* 確保區塊正常顯示 */
             max-width: 650px;
             margin: 0 auto;
             background: var(--card-bg);
@@ -169,6 +170,7 @@
             font-weight: 400;
             line-height: 1.5;
             text-align: left;
+            color: var(--text-main);
         }
         .service-price {
             font-size: 0.85rem;
@@ -268,6 +270,71 @@
 
             <div class="portfolio-item">
                 <img src="work2.jpg" alt="染髮作品" class="portfolio-image">
+                <div class="portfolio-info">
+                    <span class="style-tag">Color / 染髮</span>
+                    <h3 class="style-name">冷調燕麥奶茶色</h3>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="work3.jpg" alt="剪髮作品" class="portfolio-image">
+                <div class="portfolio-info">
+                    <span class="style-tag">Cut / 剪髮</span>
+                    <h3 class="style-name">輕盈感邊緣羽毛剪</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <h2 class="section-title">服務項目 / Services</h2>
+        <section class="service-list">
+            <div class="service-item">
+                <span class="service-name">設計剪髮 (含洗髮)</span>
+                <span class="service-price">歡迎私訊諮詢</span>
+            </div>
+            <div class="service-item">
+                <span class="service-name">韓式質感染髮 (質感染/光線染)</span>
+                <span class="service-price">歡迎私訊諮詢</span>
+            </div>
+            <div class="service-item">
+                <span class="service-name">歐美手刷染系列 (Balayage)</span>
+                <span class="service-price">歡迎私訊諮詢</span>
+            </div>
+            <div class="service-item">
+                <span class="service-name">氛圍感燙髮 (氣墊燙/木馬燙)</span>
+                <span class="service-price">歡迎私訊諮詢</span>
+            </div>
+            <div class="service-item">
+                <span class="service-name">深層結構式護髮 / 頭皮養護</span>
+                <span class="service-price">歡迎私訊諮詢</span>
+            </div>
+        </section>
+
+        <h2 class="section-title">沙龍資訊 / Information</h2>
+        <section class="info-card">
+            <div class="info-item">
+                <strong>Salon Address / 沙龍地址</strong>
+                台北市大安區忠孝東路四段 XXX 號 2 樓
+            </div>
+            <div class="info-item">
+                <strong>Phone Number / 預約電話</strong>
+                02-2771-XXXX
+            </div>
+            <div class="info-item">
+                <strong>Opening Hours / 營業時間</strong>
+                週二至週日 11:00 - 20:00 (每週一公休)
+            </div>
+
+            <div class="cta-container">
+                <a href="https://instagram.com" class="btn-booking" target="_blank">Follow IG / 線上預約</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 HAIR STUDIO CHRIS. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
